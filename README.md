@@ -183,40 +183,6 @@ Interactive elements help engage users and create a more dynamic browsing experi
 
 ---
 
-## 🚀 Future Roadmap
-
-### Week 2
-
-* Interactive Dashboard
-* Local Storage Integration
-* User Data Persistence
-
-### Week 3
-
-* React Frontend
-* Component-Based Architecture
-* React Router Integration
-
-### Week 4
-
-* Node.js Backend
-* Express.js APIs
-* MongoDB Database
-
-### Week 5
-
-* JWT Authentication
-* User Accounts
-* Cloud Deployment
-
-### Week 6
-
-* Dockerization
-* CI/CD Pipeline
-* Production Deployment
-
----
-
 ## 📸 Screenshots
 
 Add screenshots of your landing page here after deployment.
@@ -229,31 +195,6 @@ screenshots/features.png
 ```
 
 ---
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/s4rah-101/studenthub_SarahSharma.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd studenthub_SarahSharma
-```
-
-Open:
-
-```bash
-index.html
-```
-
-in your browser.
-
----
-
 ## 📈 Learning Outcomes
 
 Through this project, I learned:
