@@ -25,9 +25,13 @@ body{
     overflow-x:hidden;
     transition:.4s;
 }
+body{
+    overflow-x:hidden;
+}
 
 .container{
-    width:min(90%, 1400px);
+    width:100%;
+    max-width:1200px;
     margin:auto;
 }
 
@@ -174,7 +178,7 @@ body.dark .cta h2{
     min-height:100vh;
 
     display:grid;
-    grid-template-columns:1.1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     align-items:center;
     gap:60px;
@@ -232,8 +236,7 @@ body.dark .cta h2{
 .dashboard-preview{
     display:grid;
 
-    grid-template-columns:
-    repeat(2,minmax(180px,1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     gap:20px;
 
@@ -304,7 +307,7 @@ body.dark .cta h2{
 
 .feature-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:30px;
 }
 
@@ -333,8 +336,7 @@ body.dark .cta h2{
 
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     gap:30px;
 
@@ -371,7 +373,7 @@ body.dark .cta h2{
 
 .testimonial-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:30px;
     margin-top:60px;
 }
@@ -441,7 +443,7 @@ footer{
 
 .footer-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:40px;
 }
 
@@ -498,33 +500,37 @@ footer{
     }
 
     .stats{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap:30px;
     }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px){
 
     .navbar{
-        flex-direction:column;
-        gap:15px;
+        flex-direction: column;
     }
 
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
+    .hero{
+        flex-direction: column;
+        text-align:center;
     }
 
-    .dashboard-preview{
-        grid-template-columns:1fr;
+    .cards{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .hero-content h1{
-        font-size:2.5rem;
+    h1{
+        font-size:2rem;
     }
 }
 
-@media(max-width:576px){
+@media (max-width:768px){
+    .btn{
+        width:100%;
+        padding:15px;
+    
+}
 
     .stats{
         grid-template-columns:1fr;
