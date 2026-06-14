@@ -1,6 +1,4 @@
-// ===============================
-// STUDENTHUB SCRIPT.JS
-// ===============================
+
 
 // DARK MODE TOGGLE
 
@@ -18,9 +16,9 @@ themeToggle.addEventListener("click", () => {
 
 });
 
-// ===============================
+
 // SCROLL REVEAL ANIMATION
-// ===============================
+
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -50,9 +48,8 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 
-// ===============================
 // ANIMATED COUNTERS
-// ===============================
+
 
 const counters = document.querySelectorAll(".counter");
 
@@ -127,9 +124,9 @@ window.addEventListener("scroll", startCounters);
 startCounters();
 
 
-// ===============================
+
 // SMOOTH NAVBAR SHADOW
-// ===============================
+
 
 const navbar =
     document.querySelector(".navbar");
@@ -151,9 +148,9 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ===============================
+
 // ACTIVE NAV LINK HIGHLIGHT
-// ===============================
+
 
 const sections =
     document.querySelectorAll("section");
@@ -198,9 +195,9 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ===============================
+
 // BUTTON RIPPLE EFFECT
-// ===============================
+
 
 const buttons =
     document.querySelectorAll(
@@ -226,9 +223,9 @@ buttons.forEach(button => {
 });
 
 
-// ===============================
+
 // CONSOLE MESSAGE
-// ===============================
+
 
 console.log(
     "%c🎓 StudentHub Loaded Successfully!",

@@ -26,6 +26,11 @@ body{
     transition:.4s;
 }
 
+.container{
+    width:min(90%, 1400px);
+    margin:auto;
+}
+
 /* DARK MODE */
 
 body.dark{
@@ -167,35 +172,24 @@ body.dark .cta h2{
 
 .hero{
     min-height:100vh;
-    display:flex;
+
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+
     align-items:center;
-    justify-content:space-between;
     gap:60px;
+
     padding:140px 8% 80px;
-}
 
-.hero-content{
-    flex:1;
-}
-
-.badge{
-    background:#e0e7ff;
-    color:var(--primary);
-    padding:10px 18px;
-    border-radius:30px;
-    font-size:.9rem;
-    font-weight:600;
+    max-width:1400px;
+    margin:auto;
 }
 
 .hero-content h1{
-    font-size:4.5rem;
+    font-size:clamp(2.5rem, 5vw, 5rem);
     margin-top:25px;
     line-height:1.1;
     color:var(--dark);
-}
-
-.hero-content h1 span{
-    color:var(--primary);
 }
 
 .hero-content p{
@@ -203,12 +197,6 @@ body.dark .cta h2{
     font-size:1.1rem;
     line-height:1.8;
     max-width:600px;
-}
-
-.hero-buttons{
-    margin-top:35px;
-    display:flex;
-    gap:20px;
 }
 
 .primary-btn{
@@ -242,10 +230,10 @@ body.dark .cta h2{
 /* DASHBOARD */
 
 .dashboard-preview{
-    flex:1;
-
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    repeat(2,minmax(180px,1fr));
 
     gap:20px;
 
@@ -263,6 +251,12 @@ body.dark .cta h2{
     background:#eef2ff;
     padding:25px;
     border-radius:18px;
+
+    min-height:120px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .card h4{
@@ -336,8 +330,13 @@ body.dark .cta h2{
 
 .stats{
     padding:90px 8%;
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
 
     background:
     linear-gradient(
@@ -536,9 +535,9 @@ footer{
     }
 
     .features h2,
-    .about h2,
-    .testimonials h2,
-    .cta h2{
-        font-size:2.2rem;
-    }
+.about h2,
+.testimonials h2,
+.cta h2{
+    font-size:clamp(2rem,4vw,3.5rem);
+}
 }
