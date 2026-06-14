@@ -189,14 +189,13 @@ Add screenshots of your landing page here after deployment.
 
 Example:
 
-```
 <img width="2850" height="1464" alt="Website_page1" src="https://github.com/user-attachments/assets/b4ac0411-ee35-4eb0-b8fc-f9ad3990b981" />
 <img width="2848" height="1460" alt="Website_page2" src="https://github.com/user-attachments/assets/cff26209-fb2f-4502-8256-edf9db0a867e" />
 <img width="2842" height="1464" alt="Website_page3" src="https://github.com/user-attachments/assets/0ea1d96c-55d5-4006-bbfb-787a204c54d1" />
 <img width="2842" height="1460" alt="Website_page4" src="https://github.com/user-attachments/assets/6e0bc3ca-4c3e-4619-b893-c82b868407f9" />
 <img width="2838" height="1454" alt="Website_page5" src="https://github.com/user-attachments/assets/0e5ae2c9-f3d5-4400-9b8f-af660cfdb703" />
 
-```
+
 
 ---
 ## 📈 Learning Outcomes
